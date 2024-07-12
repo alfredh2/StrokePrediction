@@ -37,7 +37,7 @@ To run this project, follow these steps:
    ```
    jupyter notebook
    ```
-3. Open the `PatientStrokePrediction.ipynb` notebook.
+3. Open the `StrokePrediction.ipynb` notebook.
 4. Run the cells in the notebook to see the analysis and model predictions.
 
 ## Results
