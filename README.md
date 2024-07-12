@@ -1,37 +1,46 @@
-# Patient Stroke Prediction
+# Patient Stroke Prediction Project
+**Alfred Hofmann**
 
-## Overview
+## Introduction
+Welcome to the Patient Stroke Prediction Project! Our main research goal is to build a predictive model that will effectively predict the probability a patient will have a stroke. Additionally, we aim to identify which variables in our dataset have the most predictive power when it comes to predicting if a person will have a stroke. This project is implemented in a Jupyter Notebook.
 
-This project aims to predict whether a patient is at risk of having a stroke using logistic regression and additional K-Means clustering analysis. The model has achieved a true positive rate of over 90%, making it a reliable tool for early detection of stroke risk.
+## Technologies
+- **Programming Language:** Python 3
+- **Libraries and Frameworks:** Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn, Statsmodels
+- **Environment:** Jupyter Notebook
 
-## Features
+## Dataset
+The dataset used in this project is from Kaggle's Stroke Prediction Dataset. It includes features such as age, hypertension, heart disease, average glucose level, BMI, and smoking status, with the response variable being whether a stroke has occurred or not.
 
-1. **Logistic Regression Model**: Utilizes the scikit-learn library to predict stroke occurrences.
-2. **K-Means Clustering**: Additional analysis to segment patient groups and identify high-risk clusters.
-3. **Visualization**: Includes visualizations of the data and model performance.
+**Dataset Source:** [Kaggle Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
 
-## Usage
+## Model
+We use various logistic regression models, like Lasso, for the stroke prediction. The use of the model and tuning are demonstrated in the notebook. Additionally, K-Means clustering is applied for further analysis.
 
-1. **Data Preprocessing**:
-    - Preprocess the data using the provided scripts or Jupyter notebooks.
-    - Ensure the data is clean and properly formatted for model training.
+## Installation
+To run this project, follow these steps:
 
-2. **Model Training**:
-    - Train the logistic regression model by running the appropriate notebook or script.
-    - Save the trained model for future use.
+1. Ensure that Python 3 and Jupyter Notebook are installed on your machine.
+2. Clone this repository:
+   ```
+   git clone https://github.com/alfredh2/PatientStrokePrediction.git
+   ```
+3. Navigate to the cloned repository.
+4. Install required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-3. **Model Evaluation**:
-    - Evaluate the model performance using the test dataset.
-    - Analyze the results and visualize the performance metrics.
-
-4. **Clustering Analysis**:
-    - Perform K-Means clustering to segment patient groups.
-    - Analyze the clusters to identify high-risk groups.
-
+## Running the Notebook
+1. Open a terminal and navigate to the project directory.
+2. Start Jupyter Notebook:
+   ```
+   jupyter notebook
+   ```
+3. Open the `PatientStrokePrediction.ipynb` notebook.
+4. Run the cells in the notebook to see the analysis and model predictions.
 
 ## Results
+The notebook includes a detailed analysis of model performance and accuracy metrics. We compare different models and discuss the best-performing model for this dataset. Additionally, the K-Means clustering analysis provides insights into the relationships between the explanatory variables.
 
-- The logistic regression model achieved a test ROC AUC of 0.78.
-- K-Means clustering identified high-risk patient groups, providing insights for targeted medical interventions.
-
-Please go through the notebook for a detailed analysis.
+**To read about my experience working on this project, go to my Medium article on it: https://medium.com/@alfredpmhofmann/project-5-patient-stoke-prediction-using-logistic-regression-9a35a24342dc
